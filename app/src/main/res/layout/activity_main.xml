@@ -297,29 +297,29 @@
             app:layout_constraintTop_toBottomOf="@id/view4">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn2"
                 android:layout_width="wrap_content"
-                android:layout_height="32dp"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:background="@drawable/button_active"
                 android:text="File" />
 
             <androidx.appcompat.widget.AppCompatButton
-
+                android:id="@+id/btn1"
                 android:layout_width="wrap_content"
-                android:layout_height="32dp"
+                android:layout_height="48dp"
                 android:layout_gravity="start"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+
                 android:background="@drawable/button_active"
                 android:text="Media"
                 android:textColor="@color/textColor" />
 
             <androidx.appcompat.widget.AppCompatButton
-
+                android:id="@+id/btn3"
                 android:layout_width="wrap_content"
-                android:layout_height="32dp"
+                android:layout_height="48dp"
                 android:layout_gravity="end"
-                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/button_active"
                 android:text="Link" />

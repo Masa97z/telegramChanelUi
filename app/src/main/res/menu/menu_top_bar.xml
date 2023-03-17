@@ -8,9 +8,7 @@
         android:icon="@drawable/baseline_edit"
         android:title="favorite"
         android:contentDescription="content_description_favorite"
-        app:showAsAction="ifRoom"
-        />
-
+        app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/more"
         android:title="more"

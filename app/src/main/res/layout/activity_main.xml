@@ -29,6 +29,7 @@
         <androidx.constraintlayout.motion.widget.MotionLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="24dp"
             app:layoutDescription="@xml/activity_main_scene">
 
 
@@ -61,7 +62,8 @@
                 android:layout_width="80dp"
                 android:layout_height="@dimen/marginLarge"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
                 android:background="@drawable/the_chance_photo"
                 android:src="@drawable/img"
                 app:layout_constraintStart_toStartOf="parent"
@@ -81,9 +83,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="Info"
-        android:textColor="@color/blueTelegram"
-        android:textSize="18sp"
+        android:text="@string/info"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
@@ -95,7 +97,7 @@
         android:fontFamily="@font/roboto_medium"
         android:text="@string/tme"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:layout_marginTop="8dp"
         android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,7 +112,7 @@
         android:fontFamily="@font/roboto_medium"
         android:text="Invite Link"
         android:textColor="@color/subText"
-        android:textSize="14sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ch" />
 
@@ -121,7 +123,199 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="20dp"
         android:src="@drawable/qr_code"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/invate" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/notification"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/invate" />
+
+    <TextView
+        android:id="@+id/on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="On"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/subText"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/noteSwit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        app:theme="@style/Color1SwitchStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@drawable/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/on" />
+    <TextView
+        android:id="@+id/member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Members"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+    <TextView
+        android:id="@+id/subscrib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Subscriberas"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/outline_people"
+        android:drawablePadding="12dp"
+
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/member" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:text="901"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toBottomOf="@+id/subscrib"
+        app:layout_constraintEnd_toEndOf="parent"
+     />
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subscrib" />
+    <TextView
+        android:id="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="administrator"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/outline_people"
+        android:drawablePadding="12dp"
+
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/num2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:text="    1"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toBottomOf="@+id/admin"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@drawable/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/admin" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view4" >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="File"
+            android:background="@drawable/button_active"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:layout_gravity="start"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_height="32dp"
+            android:text="Media"
+            android:background="@drawable/button_active"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:layout_gravity="end"
+            android:background="@drawable/button_active"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_height="32dp"
+            android:text="Link"/>
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
